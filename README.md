@@ -7,7 +7,6 @@
 ```python
 from Crypto.PublicKey import RSA
 from Crypto.Util.number import *
-import gmpy2
 f = open('key.pem','r')
 key = RSA.importKey(f.read())
 n = key.n
@@ -100,7 +99,7 @@ Encrypted flag = 108776861609452302246017972283645197718014675472425122445414552
 Input your ciphertext:
 Input a number other than `Encrypted flag`.
 ```
->Đề bài đã gợi ý "chỉ cần gửi bản mã của bạn, chúng tôi sẽ giải mã nó..". Và sau khi kết nối được đến server mình nhận được N,e và flag đã được mã hoá. có thể hiểu như sau: ![anh2](rsa4.png)
+>Đề bài đã gợi ý "chỉ cần gửi bản mã của bạn, chúng tôi sẽ giải mã nó..". Và sau khi kết nối được đến server mình nhận được N,e và flag đã được mã hoá. Có thể hiểu như sau: ![anh2](rsa4.png)
 
 ```python
 from Crypto.Util.number import *
